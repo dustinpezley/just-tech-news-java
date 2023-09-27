@@ -56,11 +56,11 @@ public class User implements Serializable {
     }
 
     public String getEmaill() {
-        return emaill;
+        return email;
     }
 
     public void setEmaill(String emaill) {
-        this.emaill = emaill;
+        this.email = emaill;
     }
 
     public String getPassword() {
