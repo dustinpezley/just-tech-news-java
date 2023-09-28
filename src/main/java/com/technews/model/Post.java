@@ -29,7 +29,7 @@ public class Post implements Serializable {
     private Date postedAt = new Date();
     @NotNull
     @Temporal(TemporalType.DATE)
-    @Column(name = "posted_at")
+    @Column(name = "updated_at")
     private Date updatedAt = new Date();
 
     @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
