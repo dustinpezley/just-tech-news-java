@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -71,7 +71,7 @@ public class PostController {
             vote.setUserId(sessionUser.getId());
             voteRepository.save(vote);
 
-            returnPost = repository.getById(vote.getPostId());
+            returnPost = repository.getReferenceById(vote.getPostId());
             returnPost.setVoteCount(voteRepository.countVotesByPostId(vote.getPostId()));
 
             returnValue = "";
