@@ -55,12 +55,12 @@ public class User implements Serializable {
         this.username = username;
     }
 
-    public String getEmaill() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmaill(String emaill) {
-        this.email = emaill;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
